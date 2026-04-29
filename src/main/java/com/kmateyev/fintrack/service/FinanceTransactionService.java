@@ -1,6 +1,9 @@
 package com.kmateyev.fintrack.service;
 
+import com.kmateyev.fintrack.model.BaseResponse;
+import com.kmateyev.fintrack.model.transaction.TransactionData;
+
 public interface FinanceTransactionService {
 
-    void createTransaction();
+    BaseResponse createTransaction(TransactionData transaction);
 }

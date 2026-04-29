@@ -2,11 +2,15 @@ package com.kmateyev.fintrack.entity;
 
 import jakarta.persistence.*;
 import com.kmateyev.fintrack.enums.TransactionType;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "transactions")
 public class FinanceTransaction {
 

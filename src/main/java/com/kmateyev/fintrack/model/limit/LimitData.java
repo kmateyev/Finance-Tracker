@@ -1,5 +1,6 @@
-package com.kmateyev.fintrack.model;
+package com.kmateyev.fintrack.model.limit;
 
+import com.kmateyev.fintrack.model.category.CategoryData;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -12,8 +13,6 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 public class LimitData {
-
-    private Long id;
 
     @NotNull
     private CategoryData categoryData;

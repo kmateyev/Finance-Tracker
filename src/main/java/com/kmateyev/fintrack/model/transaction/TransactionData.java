@@ -1,9 +1,9 @@
-package com.kmateyev.fintrack.model;
+package com.kmateyev.fintrack.model.transaction;
 
+import com.kmateyev.fintrack.model.category.CategoryData;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.Setter;
 import com.kmateyev.fintrack.enums.TransactionType;
 
@@ -14,9 +14,7 @@ import java.time.LocalDate;
 @Setter
 public class TransactionData {
 
-    private Long id;
-
-    @NonNull
+    @NotNull
     private TransactionType transactionType;
 
     @NotNull
